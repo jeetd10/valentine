@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center bg-valentine fade-in">
+
+  <h1 class="title">Will you be my Valentine? 💘</h1>
+
+  <div class="btn-group">
+    <button class="btn yes" onclick="goNext()">Yes 💖</button>
+    <button class="btn no" id="noBtn">No 🙈</button>
+  </div>
+
+<script>
+const noBtn = document.getElementById("noBtn");
+noBtn.addEventListener("mouseover", () => {
+  noBtn.style.transform =
+    `translate(${Math.random()*250 - 125}px, ${Math.random()*150 - 75}px)`;
+});
+function goNext() {
+  window.location.href = "letter.html";
+}
+</script>
+
+</body>
+</html>
